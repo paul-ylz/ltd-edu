@@ -6,29 +6,31 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     HelloWorld
   },
   metaInfo: {
+    title: "foo bar",
+    titleTemplate: "%s - Yay!",
     meta: [
       {
-        vmid: 'og:title',
-        property: 'og:title',
-        content: 'Test title',
+        vmid: "og:title",
+        property: "og:title",
+        content: "Test title",
         template: chunk => `${chunk} - My page` // or as string template: '%s - My page'
       }
     ]
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
